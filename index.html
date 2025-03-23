@@ -12,7 +12,12 @@
   <nav>
     <div class="nav-container">
       <a href="#home" class="logo">Kacper Dula</a>
-      <ul class="nav-links">
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -157,6 +162,14 @@
       top: 0,
       behavior: 'smooth' // Smooth scroll
     });
+  });
+</script>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
   });
 </script>
 </body>
