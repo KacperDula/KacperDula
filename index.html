@@ -30,36 +30,47 @@
     <a href="#projects" class="btn">View My Work</a>
   </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="about-content">
-      <h2>About Me</h2>
-      <p>I'm a passionate and driven Software Engineer currently pursuing a Bachelor’s in Computer Science at Mediterranean College, Athens. I specialize in web development and have experience with PHP, CSS, HTML, C, Python, and SQL. I love building dynamic websites and optimizing backend performance.</p>
-    </div>
-    <div class="about-image">
-      <img src="your-photo.jpg" alt="Kacper Dula">
-    </div>
-  </section>
+<!-- About Section -->
+<section id="about">
+  <div class="about-content">
+    <h2>About Me</h2>
+    <p>I'm a passionate and driven Software Engineer currently pursuing a Bachelor’s in Computer Science at Mediterranean College, Athens. I specialize in web development and have experience with PHP, CSS, HTML, C, Python, and SQL. I love building dynamic websites and optimizing backend performance.</p>
+  </div>
+  <div class="about-image">
+    <!-- New Animated Coder GIF -->
+    <img src="https://camo.githubusercontent.com/2366b34bb903c09617990fb5fff4622f3e941349e846ddb7e73df872a9d21233/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966" alt="Male Coder Animation" class="coder-gif">
+  </div>
+</section>
 
   <!-- Projects Section -->
-  <section id="projects">
+ <!-- Projects Section -->
+<section id="projects">
     <h2>Projects</h2>
     <div class="project-grid">
-     <!-- React Dashboard Project -->
-<div class="project-card">
-    <i class="fab fa-react project-icon"></i> <!-- React icon -->
-    <h3>React Dashboard</h3>
-    <p>A dynamic and interactive React-based dashboard with data visualization and responsive design.</p>
-    <a href="https://github.com/KacperDula/React-Dashboard" class="btn">View on GitHub</a>
-  </div>
+      <!-- React Dashboard Project -->
+      <div class="project-card">
+        <i class="fab fa-react project-icon"></i> <!-- React icon -->
+        <h3>React Dashboard</h3>
+        <p>A dynamic and interactive React-based dashboard with data visualization and responsive design.</p>
+        <a href="https://github.com/KacperDula/React-Dashboard" class="btn">View on GitHub</a>
+      </div>
   
-  <!-- Chatroom Application Project -->
-  <div class="project-card">
-    <i class="fab fa-php project-icon"></i> <!-- PHP icon -->
-    <h3>Chatroom Application</h3>
-    <p>A real-time chat application with user authentication and live messaging.</p>
-    <a href="https://github.com/KacperDula/Kacper-Chat-Application" class="btn">View on GitHub</a>
-  </div>
+      <!-- Chatroom Application Project -->
+      <div class="project-card">
+        <i class="fab fa-php project-icon"></i> <!-- PHP icon -->
+        <h3>Chatroom Application</h3>
+        <p>A real-time chat application with user authentication and live messaging.</p>
+        <a href="https://github.com/KacperDula/Kacper-Chat-Application" class="btn">View on GitHub</a>
+      </div>
+  
+      <!-- Banking System in C Project -->
+      <div class="project-card">
+        <i class="fas fa-c project-icon"></i> <!-- C icon -->
+        <h3>Banking System in C</h3>
+        <p>A console-based banking system implemented in C, featuring account management, transactions, and user authentication.</p>
+        <a href="https://github.com/KacperDula/Banking-System-In-C" class="btn">View on GitHub</a>
+      </div>
+    </div>
   </section>
 
   <!-- Skills Section -->
@@ -102,19 +113,19 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <h2>Get In Touch</h2>
-    <p>Feel free to reach out if you have any questions or just want to connect!</p>
-    <div class="contact-info">
-      <p>Email: <a href="mailto:kacperdulabusiness@gmail.com">kacperdulabusiness@gmail.com</a></p>
-      <p>Phone: <a href="tel:+306945258923">+30 694 525 8923</a></p>
-    </div>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/KacperDula" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.facebook.com/your-facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-    </div>
-  </section>
+<section id="contact">
+  <h2>Get In Touch</h2>
+  <p>Feel free to reach out if you have any questions or just want to connect!</p>
+  <div class="contact-info">
+    <p>Email: <a href="mailto:kacperdulabusiness@gmail.com">kacperdulabusiness@gmail.com</a></p>
+    <p>Phone: <a href="tel:+306945258923">+30 694 525 8923</a></p>
+  </div>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/kacper-dula-72413a355/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/KacperDula13" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://github.com/KacperDula" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+</section>
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -125,5 +136,28 @@
       });
     });
   </script>
+  <!-- Back to Top Button -->
+<button id="back-to-top" title="Go to top">
+  <i class="fas fa-arrow-up"></i> <!-- FontAwesome arrow icon -->
+</button>
+<script>
+  // Show/hide the button based on scroll position
+  window.onscroll = function() {
+    const backToTopButton = document.getElementById('back-to-top');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      backToTopButton.style.display = 'block'; // Show the button
+    } else {
+      backToTopButton.style.display = 'none'; // Hide the button
+    }
+  };
+
+  // Smooth scroll to top when the button is clicked
+  document.getElementById('back-to-top').addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scroll
+    });
+  });
+</script>
 </body>
 </html>

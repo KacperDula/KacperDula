@@ -355,3 +355,95 @@ body {
       align-items: center;
     }
   }
+
+  /* Project Icons */
+.project-icon {
+    font-size: 4rem; /* Larger icon size */
+    margin-bottom: 20px;
+    color: #00ADB5; /* Teal accent color */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .project-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    color: #00878e; /* Darker teal on hover */
+  }
+  
+  /* Project Card Styles */
+  .project-card {
+    background-color: #393E46; /* Slightly lighter dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  @media (max-width: 768px) {
+    .coder-animation {
+      margin-top: 20px; /* Add space between text and animation on small screens */
+    }
+  
+    .screen {
+      width: 150px;
+      height: 90px;
+    }
+  
+    .keyboard {
+      width: 170px;
+      height: 15px;
+    }
+  }
+/* Animated Coder GIF */
+.coder-gif {
+    max-width: 100%; /* Ensure the GIF scales responsively */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  .coder-gif {
+    width: 300px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Back to Top Button */
+#back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00ADB5; /* Teal accent color */
+    color: #EEEEEE;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #back-to-top:hover {
+    background-color: #00878e; /* Darker teal on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  #back-to-top i {
+    margin-top: 2px; /* Adjust icon alignment */
+  }
