@@ -1,0 +1,209 @@
+ROLE
+You are a senior frontend engineer and UI/UX designer.
+
+GOAL
+Build a modern personal portfolio website inspired by the structure, typography, and minimalist aesthetic of https://brittanychiang.com/
+
+IMPORTANT:
+Do NOT copy the design. Create a unique design with similar layout logic, clean spacing, smooth navigation, and modern developer aesthetics.
+
+--------------------------------------------------
+
+DESIGN & UX REQUIREMENTS
+
+• minimalist & modern developer aesthetic
+• dark theme by default
+• elegant typography
+• smooth scrolling navigation
+• subtle animations & hover effects
+• responsive & mobile-first
+• sticky navigation with active section highlighting
+• accessibility friendly (ARIA, contrast, keyboard nav)
+
+--------------------------------------------------
+
+SECTIONS TO INCLUDE
+
+1. Hero
+2. About
+3. Experience
+4. Projects
+5. Skills
+6. Education
+7. Languages
+8. Contact
+9. Footer
+
+--------------------------------------------------
+
+PERSONAL INFORMATION
+
+Name: Kacper Dula
+Title: Junior Software Engineer (Backend-focused)
+Location: Athens, Greece
+Phone: +30 694 525 8923
+Email: kacper.dula.dev@gmail.com
+LinkedIn: https://www.linkedin.com/in/kacper-dula/
+GitHub: https://github.com/KacperDula
+Military Service: Completed
+
+--------------------------------------------------
+
+HERO SECTION
+
+Display:
+
+Kacper Dula
+Backend-focused Software Engineer
+Building scalable systems & real-world applications.
+
+Short intro:
+Junior Software Engineer with strong academic background and hands-on experience building backend, frontend, and full-stack applications.
+
+CTA buttons:
+• View Projects
+• Contact Me
+
+--------------------------------------------------
+
+ABOUT SECTION
+
+Junior Software Engineer with a strong academic background in Computer Science and hands-on experience building backend, frontend, and full-stack applications.
+
+Experienced with ASP.NET Core, Spring Boot, React, REST APIs, and relational databases, along with foundational machine learning workflows.
+
+Reliable, collaborative, and communication-focused, seeking a junior software development role with long-term growth opportunities.
+
+--------------------------------------------------
+
+EXPERIENCE
+
+Start Co-Founder
+Feb 2026 – Present
+
+Hospitality Industry — Athens, Greece
+Jun 2020 – Dec 2025
+• Worked in fast-paced environments while completing studies
+• Developed teamwork, communication, and time management skills
+
+--------------------------------------------------
+
+TECHNICAL SKILLS
+
+Languages:
+C#, Java, Python, PHP, JavaScript, TypeScript, SQL, C/C++
+
+Frameworks:
+ASP.NET Core, Entity Framework Core, Spring Boot, React.js
+
+Databases:
+SQLite, MySQL, SQL Server
+
+Web:
+REST APIs, HTML5, CSS3, Bootstrap
+
+Data / ML:
+Pandas, NumPy, Scikit-Learn
+
+Tools & Concepts:
+Git & GitHub, OOP principles
+
+--------------------------------------------------
+
+PROJECTS
+
+GameStore Minimal API
+Lightweight REST API built with ASP.NET Core, EF Core, and SQLite.
+Demonstrates backend architecture patterns suitable for small storefront systems.
+Repo:
+https://github.com/KacperDula/GameStore-Minimal-API
+
+Chat Application
+Real-time chat using WebSockets (Ratchet), MySQL persistence, and email verification onboarding.
+Repo:
+https://github.com/KacperDula/Chat-Application
+
+React Analytics Dashboard
+Responsive analytics dashboard with reusable React components and chart integrations.
+Repo:
+https://github.com/KacperDula/React-Analytics-Dashboard
+
+Salary Prediction System
+Machine learning workflow including data analysis, training, and evaluation using Scikit-Learn.
+Repo:
+https://github.com/KacperDula/SalaryPrediction-Python
+
+--------------------------------------------------
+
+EDUCATION
+
+Professional Certification – IT Applications Developer
+Athens University of Economics and Business | Feb 2026
+• Team-based labs using Spring Boot, React, and SQL Server
+• Workshops in software architecture, REST API security, and UX/UI
+• Enterprise-style development with Git/GitHub
+
+BSc Computer Science
+University of Derby (Athens Campus) | Jun 2025
+• Software engineering, algorithms, databases, AI, and web technologies
+• Final-year project: ML-powered recommendation system
+
+--------------------------------------------------
+
+LANGUAGES
+
+Polish (Native)
+Greek (Native)
+English (Fluent)
+
+--------------------------------------------------
+
+CONTACT SECTION
+
+Include:
+
+• email link
+• LinkedIn
+• GitHub
+• optional phone
+• contact form with validation
+
+--------------------------------------------------
+
+TECH STACK REQUIREMENTS
+
+Build using:
+
+• Next.js (preferred) or React
+• TypeScript
+• TailwindCSS
+• Framer Motion for animations
+• SEO optimized
+• fast performance & lazy loading
+
+--------------------------------------------------
+
+OPTIONAL ENHANCEMENTS
+
+• smooth scroll navigation
+• active section indicator
+• project hover previews
+• GitHub repo fetch integration
+• dark/light toggle
+• deploy-ready for Vercel
+
+--------------------------------------------------
+
+FINAL GOAL
+
+Create a professional developer portfolio that:
+
+• impresses recruiters in under 30 seconds
+• highlights backend & system thinking
+• showcases projects clearly
+• feels modern and high-end
+• is clean, fast, and production-ready
+
+Provide full project structure and code.
+
+
