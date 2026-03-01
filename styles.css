@@ -1,0 +1,120 @@
+/* ---------------- Skills Section - UPDATED ---------------- */
+#skills {
+    background-color: #393E46;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #EEEEEE;
+}
+
+.skills-subtitle {
+    color: #CCCCCC;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-category {
+    background-color: #222831;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    color: #00ADB5;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #393E46;
+}
+
+.skill-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #2D333B;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    background-color: #393E46;
+    transform: scale(1.05);
+}
+
+.skill-icon {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover .skill-icon {
+    transform: scale(1.1);
+}
+
+.skill-item span {
+    font-size: 1rem;
+    color: #EEEEEE;
+    font-weight: 500;
+}
+
+/* Skill icon colors */
+.fa-microsoft { color: #00A4EF; }
+.fa-php { color: #777BB4; }
+.fa-js { color: #F7DF1E; }
+.fa-react { color: #61DAFB; }
+.fa-html5 { color: #E34F26; }
+.fa-css3-alt { color: #1572B6; }
+.fa-js-square { color: #3178C6; } /* TypeScript color */
+.fa-python { color: #3776AB; }
+.fa-git-alt { color: #F05032; }
+.fa-github { color: #181717; }
+.fa-database { color: #336791; }
+.fa-server { color: #00ADB5; }
+.fa-chart-line { color: #4CAF50; }
+.fa-code { color: #007ACC; }
+
+/* Responsive skills */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+    
+    .skill-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-items {
+        grid-template-columns: 1fr;
+    }
+}
