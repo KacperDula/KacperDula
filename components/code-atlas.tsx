@@ -36,12 +36,12 @@ export function CodeAtlas() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_22%,rgba(45,212,191,0.16),transparent_36%),radial-gradient(circle_at_82%_76%,rgba(56,189,248,0.18),transparent_38%)]" />
+    <div className="pointer-events-none absolute inset-0 z-[2] overflow-hidden" aria-hidden="true">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_22%,rgba(45,212,191,0.2),transparent_36%),radial-gradient(circle_at_82%_76%,rgba(56,189,248,0.22),transparent_38%)]" />
 
       <motion.svg
         viewBox="0 0 1000 520"
-        className="absolute inset-0 h-full w-full opacity-35"
+        className="absolute inset-0 h-full w-full opacity-45"
         animate={reduceMotion ? undefined : { x: [0, 5, 0], y: [0, -3, 0] }}
         transition={{ duration: 16, repeat: Infinity, ease: "easeInOut" }}
       >
