@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 import { CodeAtlas } from "@/components/code-atlas";
-import { CommandPalette } from "@/components/command-palette";
 import { ContactForm } from "@/components/contact-form";
 import { HeroVisual } from "@/components/hero-visual";
 import { InteractiveCursor } from "@/components/interactive-cursor";
@@ -64,7 +63,6 @@ export function Portfolio() {
   return (
     <>
       <InteractiveCursor />
-      <CommandPalette />
       <TerminalMode />
       <ViewTransitions />
       <PWARegister />
