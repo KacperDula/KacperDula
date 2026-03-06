@@ -5,7 +5,9 @@ import { useEffect, useMemo, useState } from "react";
 import { CodeAtlas } from "@/components/code-atlas";
 import { ContactForm } from "@/components/contact-form";
 import { HeroVisual } from "@/components/hero-visual";
+import { InteractiveCursor } from "@/components/interactive-cursor";
 import { Nav } from "@/components/nav";
+import { TerminalMode } from "@/components/terminal-mode";
 import {
   about,
   education,
@@ -58,6 +60,8 @@ export function Portfolio() {
 
   return (
     <>
+      <InteractiveCursor />
+      <TerminalMode />
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:rounded-md focus:bg-surface focus:px-3 focus:py-2"
@@ -66,7 +70,7 @@ export function Portfolio() {
       </a>
       <Nav sections={navSections} activeSection={activeSection} />
 
-      <main id="main-content" className="mx-auto max-w-6xl space-y-28 px-4 py-12 sm:px-6 sm:py-20">
+      <main id="main-content" className="blueprint-canvas mx-auto max-w-6xl space-y-28 px-4 py-12 sm:px-6 sm:py-20">
         <section id="hero" className="hero-noise relative isolate min-h-[72vh] scroll-mt-28 overflow-hidden pt-8">
           <CodeAtlas />
           <HeroVisual />
