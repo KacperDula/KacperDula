@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
+import { CodeAtlas } from "@/components/code-atlas";
 import { ContactForm } from "@/components/contact-form";
 import { HeroVisual } from "@/components/hero-visual";
 import { Nav } from "@/components/nav";
@@ -67,6 +68,7 @@ export function Portfolio() {
 
       <main id="main-content" className="mx-auto max-w-6xl space-y-28 px-4 py-12 sm:px-6 sm:py-20">
         <section id="hero" className="hero-noise relative isolate min-h-[72vh] scroll-mt-28 overflow-hidden pt-8">
+          <CodeAtlas />
           <HeroVisual />
           <div className="relative z-10 max-w-3xl">
             <motion.p
