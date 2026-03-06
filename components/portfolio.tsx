@@ -3,11 +3,14 @@
 import { motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 import { CodeAtlas } from "@/components/code-atlas";
+import { CommandPalette } from "@/components/command-palette";
 import { ContactForm } from "@/components/contact-form";
 import { HeroVisual } from "@/components/hero-visual";
 import { InteractiveCursor } from "@/components/interactive-cursor";
 import { Nav } from "@/components/nav";
+import { PWARegister } from "@/components/pwa-register";
 import { TerminalMode } from "@/components/terminal-mode";
+import { ViewTransitions } from "@/components/view-transitions";
 import {
   about,
   education,
@@ -61,7 +64,10 @@ export function Portfolio() {
   return (
     <>
       <InteractiveCursor />
+      <CommandPalette />
       <TerminalMode />
+      <ViewTransitions />
+      <PWARegister />
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:rounded-md focus:bg-surface focus:px-3 focus:py-2"

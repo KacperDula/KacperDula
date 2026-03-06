@@ -1,11 +1,13 @@
 "use client";
 
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function InteractiveCursor() {
   const [enabled, setEnabled] = useState(false);
   const [visible, setVisible] = useState(false);
+  const visibleRef = useRef(false);
+  const rafRef = useRef<number | null>(null);
   const mouseX = useMotionValue(-100);
   const mouseY = useMotionValue(-100);
   const smoothX = useSpring(mouseX, { stiffness: 300, damping: 30, mass: 0.2 });
@@ -21,12 +23,21 @@ export function InteractiveCursor() {
     const targets = Array.from(document.querySelectorAll<HTMLElement>("a, button"));
 
     const moveCursor = (event: MouseEvent) => {
-      mouseX.set(event.clientX);
-      mouseY.set(event.clientY);
-      setVisible(true);
+      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
+      rafRef.current = requestAnimationFrame(() => {
+        mouseX.set(event.clientX);
+        mouseY.set(event.clientY);
+      });
+      if (!visibleRef.current) {
+        visibleRef.current = true;
+        setVisible(true);
+      }
     };
 
-    const leavePage = () => setVisible(false);
+    const leavePage = () => {
+      visibleRef.current = false;
+      setVisible(false);
+    };
 
     const moveMagnetic = (event: MouseEvent) => {
       const target = event.currentTarget as HTMLElement;
@@ -59,6 +70,7 @@ export function InteractiveCursor() {
       });
       window.removeEventListener("mousemove", moveCursor);
       window.removeEventListener("mouseleave", leavePage);
+      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
     };
   }, [mouseX, mouseY]);
 

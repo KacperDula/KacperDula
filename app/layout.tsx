@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 
@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Kacper Dula | Backend-focused Software Engineer",
   description:
     "Portfolio of Kacper Dula, a backend-focused junior software engineer building scalable systems and real-world applications.",
+  manifest: "/manifest.webmanifest",
   keywords: [
     "Kacper Dula",
     "Software Engineer",
@@ -20,7 +21,16 @@ export const metadata: Metadata = {
     description:
       "Portfolio showcasing backend systems, full-stack projects, and engineering experience.",
     type: "website"
+  },
+  appleWebApp: {
+    capable: true,
+    title: "Kacper Dula Portfolio",
+    statusBarStyle: "black-translucent"
   }
+};
+
+export const viewport: Viewport = {
+  themeColor: "#020617"
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
