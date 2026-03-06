@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 import { CodeAtlas } from "@/components/code-atlas";
-import { CodePlayground } from "@/components/code-playground";
 import { ContactForm } from "@/components/contact-form";
 import { HeroVisual } from "@/components/hero-visual";
 import { Nav } from "@/components/nav";
@@ -59,7 +58,6 @@ export function Portfolio() {
 
   return (
     <>
-      <CodePlayground />
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:rounded-md focus:bg-surface focus:px-3 focus:py-2"
