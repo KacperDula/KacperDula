@@ -7,6 +7,7 @@ import { ContactForm } from "@/components/contact-form";
 import { HeroVisual } from "@/components/hero-visual";
 import { Nav } from "@/components/nav";
 import { PWARegister } from "@/components/pwa-register";
+import { TerminalMode } from "@/components/terminal-mode";
 import { ViewTransitions } from "@/components/view-transitions";
 import {
   about,
@@ -60,6 +61,7 @@ export function Portfolio() {
 
   return (
     <>
+      <TerminalMode />
       <ViewTransitions />
       <PWARegister />
       <a
