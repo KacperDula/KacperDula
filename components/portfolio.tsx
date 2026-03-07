@@ -5,10 +5,8 @@ import { useEffect, useMemo, useState } from "react";
 import { CodeAtlas } from "@/components/code-atlas";
 import { ContactForm } from "@/components/contact-form";
 import { HeroVisual } from "@/components/hero-visual";
-import { InteractiveCursor } from "@/components/interactive-cursor";
 import { Nav } from "@/components/nav";
 import { PWARegister } from "@/components/pwa-register";
-import { TerminalMode } from "@/components/terminal-mode";
 import { ViewTransitions } from "@/components/view-transitions";
 import {
   about,
@@ -62,8 +60,6 @@ export function Portfolio() {
 
   return (
     <>
-      <InteractiveCursor />
-      <TerminalMode />
       <ViewTransitions />
       <PWARegister />
       <a
